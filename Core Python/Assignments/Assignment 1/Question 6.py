@@ -1,0 +1,5 @@
+print("Give two angles from user and find third angle")
+angle_one=int(input("Enter angle first = "))
+angle_second=int(input("Enter angle second = "))
+angle_third=180-(angle_one+angle_second)
+print("angle_third is = ",angle_third)
