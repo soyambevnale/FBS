@@ -234,7 +234,130 @@
 #             print(" ",end=" ")
 #     print()
 
-for i in range(1,5):
-    for j in range(1,5):
-        print(chr(64+j),end=" ")
-    print()
+# for i in range(1,5):
+#     for j in range(1,5):
+#         print(chr(64+j),end=" ")
+#     print()
+
+# cp=int(input("Enter cost price:"))
+# sp=int(input("Enter selling price:"))
+# if(sp>cp):
+#     profit=sp-cp
+#     print("profit:",profit)
+# elif(cp>sp):
+#     loss=cp-sp
+#     print("Loss:",loss)
+# else:
+#     print("no profit,no loss")
+
+# userid=input("Enter userid:")
+# password=input("Enter password:")
+# uid='soyam'
+# pwd='1234'
+# if(userid==uid and password==pwd):
+#     print("Successfully login!!")
+# else:
+#     print("Invalid userid and password.")
+
+# import random
+# userid=input("Enter userid:")
+# password=input("Enter password:")
+# uid='soyam'
+# pwd='1234'
+# if(userid==uid and password==pwd):
+#     captcha=random.randint(1000,9999)
+#     print("Captcha:",captcha)
+#     user_captcha=int(input("Enter captcha:"))
+#     if (user_captcha==captcha):
+#         print("Succefully login!")
+#     else:
+#         print("Incorrect captcha.")
+# else:
+#     print("Incorrect userid and password. ")
+        
+# sub1=int(input("Enter marks sub1:"))
+# sub2=int(input("Enter marks sub2:"))
+# sub3=int(input("Enter marks sub3:"))
+# sub4=int(input("Enter marks sub4:"))
+# sub5=int(input("Enter marks sub5:"))
+# total=sub1+sub2+sub3+sub4+sub5
+# percentage=total/500*100
+# if(percentage>=90):
+#     print("A+")
+# elif(percentage>=80):
+#     print("A")
+# elif(percentage>=70):
+#     print("B")
+# elif(percentage>=60):
+#     print("C")
+# elif(percentage>=50):
+#     print("D")
+# else:
+#     print("E")
+
+# num=int(input("Enter number:"))
+# start=num//100
+# end=num%10
+# if(start==end):
+#     print("Palindrome.")
+# else:
+#     print("Not palindrome.")
+
+# num=int(input("Enter num:"))
+# sum=0
+# for i in range(1,num):
+#     if(num%i==0):
+#         sum=sum+i
+# if (sum==num):
+#     print("Perfect")
+# else:
+#     print("Not perfect")
+  
+# num=int(input("Enter num:"))
+# sum=0
+# temp=num
+# while num>0:
+#     digit=num%10
+#     fact=1
+#     for i in range(1,digit+1):
+#         fact=fact*i
+        
+#     sum=sum+fact
+#     num=num//10
+# if(sum==temp):
+#     print("Strong")
+# else:
+#     print("Not strong")
+
+# num=int(input("Enter number:"))
+# sum=0
+# temp=num
+# count=0
+
+# n=num
+# while n>0:
+    
+#     count=count+1
+#     n=n//10
+    
+# n=num
+# while n>0:
+#     digit=n%10
+#     sum=sum+digit**count
+#     n=n//10
+# if sum==temp:
+#     print("armstrong")
+# else:
+#     print("Not armstrong")
+
+num=int(input("Enter num of student:"))
+total_per=0
+for i in range(1,num+1):
+    total=0
+    for j in range(1,6):
+        marks=float(input("Enter Marks:"))
+        total=total+marks
+        per=total/5
+    total_per=total_per+per
+avg_per=total_per/num
+print((avg_per))
