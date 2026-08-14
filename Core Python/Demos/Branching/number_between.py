@@ -8,7 +8,7 @@ elif(num<=100):
     print(f"{num} is between 51 to 100 .")
 elif(num<=150):
     print(f"{num} is between 101 to  150 .")
-elif(num<=150):
+elif(num<=250):
     print(f"{num} is between 151 to 250 .")
 else:
     print(f"{num} is above 250 .")

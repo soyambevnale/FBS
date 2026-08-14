@@ -350,14 +350,100 @@
 # else:
 #     print("Not armstrong")
 
-num=int(input("Enter num of student:"))
-total_per=0
-for i in range(1,num+1):
-    total=0
-    for j in range(1,6):
-        marks=float(input("Enter Marks:"))
-        total=total+marks
-        per=total/5
-    total_per=total_per+per
-avg_per=total_per/num
-print((avg_per))
+# num=int(input("Enter num of student:"))
+# total_per=0
+# for i in range(1,num+1):
+#     total=0
+#     for j in range(1,6):
+#         marks=float(input("Enter Marks:"))
+#         total=total+marks
+#         per=total/5
+#     total_per=total_per+per
+# avg_per=total_per/num
+# print((avg_per))
+# sum=0
+# for i in range(1,5):
+#     for j in range(1,5):
+#         print(num,end=" ")
+#         num=num
+#     print()
+
+# for i in range(1,6):
+#     for j in range(1,6-i):
+#         print(" ",end=" ")
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     for j in range(1,i):
+#         print(j,end=" ")
+#     print()
+
+# num=int(input("Enter num:"))
+# temp=num
+# count=0
+
+# for i in str(num):
+#     count=count+1
+  
+# sum=0  
+# for i in str(num):
+#     digit=int(i)
+#     sum=sum+digit**count
+
+# if sum==num:
+#     print("yes")
+# else:
+#     print("no")
+
+# for i in range(1, 6):
+#     for j in range(1, 6 - i):
+#         print(" ", end=" ")
+
+#     for j in range(1, 2 * i):
+#         if j == 1 or j == 2 * i - 1:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+# for i in range(4, 0, -1):
+#     for j in range(1, 6 - i):
+#         print(" ", end=" ")
+
+#     for j in range(1, 2 * i):
+#         if j == 1 or j == 2 * i - 1:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+# for i in range(1, 5):
+
+#     for j in range(1,i):
+#         print(" ", end=" ")
+
+#     for j in range(1,6-i):
+#         print("*", end=" ")
+
+#     print()
+
+# num=153
+# temp=num
+# count=0
+# while temp>0:
+#     count+=1
+#     temp=temp//10
+    
+# temp=num
+# sum=0
+    
+# for i in range(1,count+1):
+#     digit=temp%10
+#     sum=sum+digit**count
+#     temp=temp//10
+    
+# if sum==num:
+#     print("Yes")
+# else:
+#     print("no")
+
+
