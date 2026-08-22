@@ -447,3 +447,88 @@
 #     print("no")
 
 
+# for i in range(1, 6):
+
+#     for j in range(1, 6 - i):
+#         print(" ", end=" ")
+
+#     for j in range(1, 2 * i):
+#         if j == 1 or j == 2 * i - 1:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+
+#     print()
+
+
+# for i in range(1, 5):
+
+#     for j in range(1, i + 1):
+#         print(" ", end=" ")
+
+#     # for j in range(1, 2 * (5 - i)):
+#     for j in range(1,10-2*i):
+#         if j == 1 or j ==2*(5-i)-1:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+
+#     print()
+
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     for j in range(1,6-i):
+#         print("_",end=" ")
+#     for j in range(1,6-i):
+#         print("_",end=" ")
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     print()
+# for i in range(1,5):
+#     for j in range(1,6-i):
+#         print("*",end=" ")
+#     for j in range(1,i):
+#         print("_",end=" ")
+#     for j in range(1,i):
+#         print(" ",end=" ")
+#     for j in range(1,6-i):
+#         print("*",end=" ")
+#     print()
+    
+# 
+
+# for i in range(1,6):
+#     for j in range(1,6-i):
+#         print(" ",end=" ")
+#     for j in range(1,i+1):
+#         if j==1 or j==i:
+#             print(1,end=" ")   
+#         else:
+#             print("?",end="   ")
+#     print()
+
+
+for i in range(1,6):
+    for j in range(1,6-i):
+        print(" ",end=" ")
+    for j in range(i,2*i):
+        print(j,end=" ")
+    for j in range(2*i-2,i-1,-1):
+        print(j,end=" ")
+    print()
+
+
+#method1       
+# def search_max(li):
+#     largest=li[0]
+#     for ind in range(1,len(li)):
+#         if li[0]>li[ind]:
+#             return largest
+             
+# li = [10, 25, 32, 47, 50, 63, 78, 91]
+# res=search_max(li)
+# print(res)
+
+
+            
