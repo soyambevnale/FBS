@@ -18,4 +18,3 @@ if(res!=-1):
     print(f"{num} element present at index {res}")
 else:
     print(f"{num} element not present in list")
-    

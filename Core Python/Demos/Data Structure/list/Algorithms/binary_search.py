@@ -29,4 +29,20 @@ if(res!=-1):
     print(f"{ele} is present at position {res} .")
 else:
     print(f"{ele} not present in list")
-        
+       
+       
+li=[10,20,30,40,304,44] 
+search=int(input("Enter number to search :"))
+start=0
+end=len(li)-1
+while start<=end:
+    mid=(start+end)//2
+    if search==li[mid]:
+        print(f"{search} is present .")
+        break
+    elif search<li[mid]:
+        end=mid-1
+    elif search>li[mid]:
+        start=mid+1
+else:
+    print("not found")

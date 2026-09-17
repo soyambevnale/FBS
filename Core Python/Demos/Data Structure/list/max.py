@@ -6,8 +6,6 @@ second=li[0]
 for ind in range(1,len(li)):
     if li[ind]>max:
         max=li[ind]
-        second=max
-    elif 
         
 print("Maximum : ",li[ind])
 
