@@ -1,42 +1,57 @@
-#  https://docs.google.com/spreadsheets/d/1IvDY-PKH74lLCeREBQMLRSdWGuPhwsTDHQiDNO9kZRo/edit?usp=sharing
-num1 = 10
-num2 = 20
-str1 = 'abc'
-str2 = 'xyz'
+# #  https://docs.google.com/spreadsheets/d/1IvDY-PKH74lLCeREBQMLRSdWGuPhwsTDHQiDNO9kZRo/edit?usp=sharing
+# num1 = 10
+# num2 = 20
+# str1 = 'abc'
+# str2 = 'xyz'
 
-#1 +
-# addition
-print(num1+num2)
+# #1 +
+# # addition
+# print(num1+num2)
 
-#concatenation
-print(str1+str2)
+# #concatenation
+# print(str1+str2)
 
-# print(num1+str1)   #raise error
+# # print(num1+str1)   #raise error
 
-#2 -
-#subtraction
-print(num1-num2)
+# #2 -
+# #subtraction
+# print(num1-num2)
 
-#3 *
-#multiplication
-print(num1*num2)
+# #3 *
+# #multiplication
+# print(num1*num2)
 
-#4 /
-#division
-print(num1/num2 ) # calculate till remainder 0
+# #4 /
+# #division
+# print(num1/num2 ) # calculate till remainder 0
 
-#5 // 
-# floor division 
-print( 5//2 )  # calculate  till digits available in number
+# #5 // 
+# # floor division 
+# print( 5//2 )  # calculate  till digits available in number
 
-#6 % 
-# modulus
-print( 5/2 )
+# #6 % 
+# # modulus
+# print( 5/2 )
 
-#7 
-# exponential
-print( 4**2 )
+# #7 
+# # exponential
+# print( 4**2 )
 
-#task
-print(8**8)
+# #task
+# print(8**8)
 
+class student:
+    cname="DYPatil"
+    
+    def __init__(self,sname="abc",sid=1):
+        self.name=sname
+        self.sid=sid
+        
+    def display(self):
+        print("Sname : ",self.name)
+        print("Sid : ",self.sid)
+        print("Cname : ",student.cname)
+        
+s=student()
+s.display()
+        

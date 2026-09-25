@@ -19,14 +19,66 @@ class student:
 s1=student(12,"Suraj","JulyPython")
 s2=student(13,"Swaraj","JulyPython")
 s3=student(1,"Suhan","JulyPython")
-s1.display()
-s2.display()
+# s1.display()
+# s2.display()
 # s1.inName="firstbit"
 # student.inName="FirstBit"
-s3.display()
-print(student.stdCount)
+# s3.display()
+# print(student.stdCount)
 
-# Name
-# frn
+class placedStudent(student):
+    def __init__(self, rollno, name, batch,companyName):
+        super().__init__(rollno, name, batch,companyName)
+        self.companyName=companyName
+        
+# class emp:
+#     def calsal(self):
+#         print("emp cal sal")
+        
+# class hr(emp):
+#     def calsal(self):
+#         print(" hr calsal")
+
+# class admin(emp):
+#     def calsal(self):
+#         print("Admin cal sal")
+        
+# h=hr()
+# a=admin()
+# h.calsal()
+# a.calsal()
+
+class emp:
+    def calsal(self):
+        print("emp cal sal")
+        
+class hr(emp):
+    pass
+    # def calsal(self):
+    #     print(" hr calsal")
+
+class admin(emp):
+    pass
+        # print("Admin cal sal")
+        
+h=hr()
+a=admin()
+h.calsal()
+a.calsal()
+
+# class emp:
+#     def calsal(self):
+#         print("emp cal sal")
+        
+# class hr(emp):
+#     print("Hr calsal")
+# class admin(emp):
+#     print("Admin cal sal")
+        
+# h=hr()
+# a=admin()
+# h.calsal()
+# a.calsal()
+        
 
         

@@ -15,7 +15,7 @@ print(type(di))
 print(di)
 
 # 4 = changeable
-## key = mutable  , val = immutable
+## key = immutable  , val = mutable
 di[3]=234
 print(di)
 
