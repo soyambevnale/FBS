@@ -3,4 +3,6 @@ class time:
         self.hr=hr
         self.min=min
         self.sec=sec
-        pass
+        
+    def __str__(self):
+        return

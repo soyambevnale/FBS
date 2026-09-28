@@ -463,30 +463,44 @@
 # print("After :",li)
 
 # Implement Bubble Sort.
-def asc_bubble(li):
-    size=len(li)
-    for i in range(1,size):
-        for j in range(0,size-i):
-            if li[j]>li[j+1]:
-                li[j],li[j+1]=li[j+1],li[j]
+# def asc_bubble(li):
+#     size=len(li)
+#     for i in range(1,size):
+#         for j in range(0,size-i):
+#             if li[j]>li[j+1]:
+#                 li[j],li[j+1]=li[j+1],li[j]
 
-li=[46,86,87,90,34,45]
-asc_bubble(li)
-print("Asc :",li)
+# li=[46,86,87,90,34,45]
+# asc_bubble(li)
+# print("Asc :",li)
 
 
-def desc_bubble(li):
-    size=len(li)
-    for i in range(1,size):
-        for j in range(0,size-i):
-            if li[j]<li[j+1]:
-                li[j],li[j+1]=li[j+1],li[j]
+# def desc_bubble(li):
+#     size=len(li)
+#     for i in range(1,size):
+#         for j in range(0,size-i):
+#             if li[j]<li[j+1]:
+#                 li[j],li[j+1]=li[j+1],li[j]
 
-li=[9878,77,99,2,90,98]
-desc_bubble(li)
-print("Desc :",li)
+# li=[9878,77,99,2,90,98]
+# desc_bubble(li)
+# print("Desc :",li)
                 
 # Implement Selection Sort.
+
+def selection(li):
+    size=len(li)
+    for i in range(0,size-1):
+        min_ind=i
+        for j in range(i+1,size):
+            if li[j]<li[min_ind]:
+                min_ind=j
+        li[i],li[min_ind]=li[min_ind],li[i]
+        
+    print(li)
+    
+li=[30,40,10,20]
+selection(li)
 # Implement Insertion Sort.
 # Find the position/index of the largest element.
 # Find the position/index of the smallest element.

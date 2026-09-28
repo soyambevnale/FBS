@@ -10,10 +10,41 @@
 # iv. override Method CalculateRank
 # v. Override __str__ Method
 
+class Student:
+
+    def __init__(self, studentId, name, age, percentage):
+        self.studentId = studentId
+        self.name = name
+        self.age = age
+        self.percentage = percentage
+
+    def display(self):
+        print("Student ID :", self.studentId)
+        print("Name :", self.name)
+        print("Age :", self.age)
+        print("Percentage :", self.percentage)
+
+    def calculateRank(self):
+        if self.percentage >= 75:
+            return "Distinction"
+        elif self.percentage >= 60:
+            return "First Class"
+        elif self.percentage >= 50:
+            return "Second Class"
+        else:
+            return "Pass"
+
+    def __str__(self):
+        return self.name
+
+
 class MedicalStudent(Student):
 
-    def __init__(self, studentId, name, age, percentage, specialization, marksOfInternship):
+    def __init__(self, studentId, name, age, percentage,
+                 specialization, marksOfInternship):
+
         super().__init__(studentId, name, age, percentage)
+
         self.specialization = specialization
         self.marksOfInternship = marksOfInternship
 
@@ -21,11 +52,6 @@ class MedicalStudent(Student):
         super().display()
         print("Specialization :", self.specialization)
         print("Marks Of Internship :", self.marksOfInternship)
-
-    def accept(self):
-        super().accept()
-        self.specialization = input("Enter Specialization: ")
-        self.marksOfInternship = float(input("Enter Internship Marks: "))
 
     def calculateRank(self):
         total = self.percentage + self.marksOfInternship
@@ -36,18 +62,15 @@ class MedicalStudent(Student):
             return "First Class"
         elif total >= 100:
             return "Second Class"
-        elif total >= 70:
-            return "Pass"
         else:
-            return "Fail"
+            return "Pass"
 
     def __str__(self):
         return super().__str__() + \
                ", Specialization : " + self.specialization + \
-               ", Marks Of Internship : " + str(self.marksOfInternship)
+               ", Internship Marks : " + str(self.marksOfInternship)
 
 
-# Object
 m1 = MedicalStudent(101, "Soyam", 21, 80, "Cardiology", 18)
 
 m1.display()

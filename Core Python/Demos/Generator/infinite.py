@@ -12,4 +12,3 @@ print(next(res))
 print(next(res))
 print(next(res))
 
-for 
