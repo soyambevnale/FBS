@@ -5,4 +5,7 @@ class time:
         self.sec=sec
         
     def __str__(self):
-        return
+        return f"Hr= {self.hr}    Min={self.min}    sec={self.sec}"
+
+c=class(2,23,45)
+print(c)
