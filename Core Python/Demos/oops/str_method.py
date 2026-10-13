@@ -4,8 +4,12 @@ class time:
         self.min=min
         self.sec=sec
         
-    def __str__(self):
-        return f"Hr= {self.hr}    Min={self.min}    sec={self.sec}" 
+    # def show(self):
+    #     print( f"Hour : {self.hr}   Minute : {self.min}   Second : {self.sec}")
         
-c=class(2,23,45)
-print(c)
+    def __str__(self):
+        return  f"Hour : {self.hr}   Minute : {self.min}   Second : {self.sec}"
+    
+    
+t=time(12,3,3)
+print(t)

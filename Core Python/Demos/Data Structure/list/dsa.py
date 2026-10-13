@@ -527,3 +527,24 @@ selection(li)
 
 
 # Good morning, sir. My name is Soyam. I am a diligent, adaptable, and self-motivated person with a strong willingness to learn and grow. I believe in continuous learning and always try to improve myself through new experiences and challenges. I am proactive in taking responsibility and committed to giving my best in every task I undertake. As a fresher, I am looking for an opportunity where I can apply my abilities, gain practical experience, and contribute positively to the organization. Thank you.
+
+# li=[1,3,2,21,18,12,9]
+# temp=[]
+# res=[]
+# for i in li:
+#     if i%2!=0:
+#         temp.append(i)
+        
+# for i in range(len(temp)):
+#     if i%2==0:
+#         res.append(temp[i])
+        
+# print(res)
+li=[1,3,2,21,18,12,9]
+count=0
+for i in range(len(li)):
+    if li[i]%2!=0:
+        count+=1
+        
+        if count%2!=0:
+            print(li[i])

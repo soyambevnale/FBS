@@ -10,7 +10,7 @@ s3={50,60}
 
 # print(s1.difference(s2))
 
-# s1.difference_update(s2)
+# print(s1.difference_update(s2))
 
 # s1.discard(50)
 # print(s1)
@@ -29,11 +29,11 @@ s3={50,60}
 
 # s1.remove(40)
 
-# print(s1.symmetric_difference(s2))
+print(s1.symmetric_difference(s2))
 
 # s1.symmetric_difference_update(s2)
 
 # print(s1.union(s2))
 
-s1.update({70,80,90})
-print(s1)
+# s1.update({70,80,90})
+# print(s1)

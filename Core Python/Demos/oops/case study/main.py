@@ -37,7 +37,7 @@ class Main:
                 break
             else:
                 print("Invalid choice .")
-       
+
 res=Main.login()
 if res:
     m=Main()
