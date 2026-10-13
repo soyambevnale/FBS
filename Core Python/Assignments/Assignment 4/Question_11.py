@@ -11,7 +11,7 @@ while temp > 0:            #145
     for i in range(1, digit + 1):
         fact = fact * i
 
-    sum = sum + fact       
+    sum = sum + fact
     temp = temp // 10      #145//10=14
 
 if sum == n:

@@ -8,6 +8,10 @@
 class Product:
 
     discount = 10
+    @staticmethod
+    def applyDiscount(price):
+        final_price = price - (price * Product.discount / 100)
+        return final_price
 
     def __init__(self, pid=1, pname="Mobile", price=100000, quantity=1):
         self.id = pid
@@ -23,19 +27,15 @@ class Product:
         print("Name :", self.name)
         print("Price :", self.price)
         print("Quantity :", self.quantity)
-
-    @staticmethod
-    def applyDiscount(price):
-        final_price = price - (price * Product.discount / 100)
-        return final_price
+        print("Price after discount :", Product.applyDiscount(self.price))
+        
 
 
-obj1 = Product()
+obj1 = Product(1,"Mobile",10000,3)
 obj1.showProductDetails()
+# print("Price after discount :", Product.applyDiscount(obj1.price))
 
-print("Price after discount :", Product.applyDiscount(obj1.price))
 
 obj2 = Product(2, "Laptop", 200000, 2)
 obj2.showProductDetails()
-
-print("Price after discount :", Product.applyDiscount(obj2.price))
+# print("Price after discount :", Product.applyDiscount(obj2.price))

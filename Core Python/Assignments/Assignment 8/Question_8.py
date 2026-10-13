@@ -48,3 +48,5 @@ def rev(n):
 num=int(input("Enter number :"))
 res=rev(num)
 print("Reverse :",res)
+
+

@@ -16,4 +16,4 @@ for i in range(n):
         print(num, end=" ")
         num = num * (i - j) // (j + 1)
 
-    print()         
+    print() 

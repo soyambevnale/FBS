@@ -48,3 +48,4 @@ def sod(n):
 num=int(input("Enter number :"))
 res=sod(num)
 print("Sum :",res)
+
